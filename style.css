@@ -6,4 +6,21 @@
 
 body {
     background-color: rgb(51, 51, 51);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+}
+
+h3 {
+  color: rgb(199, 199, 199);
+}
+
+a {
+  color: rgb(199, 199, 199);
+}
+
+.JIM {
+  color: rgb(255, 127, 208);
 }
