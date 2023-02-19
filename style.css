@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size:0px;
+}
+
 body {
     background-color: rgb(46, 52, 64);
     font-family: 'M PLUS Rounded 1c', sans-serif;
@@ -10,17 +17,20 @@ body {
 
 .Card {
     width: 384px;
-    height: 512px;
+    height: 640px;
     background-color: rgb(59, 66, 82);
     border-radius: 16px;
-    margin-left: 32px;
-    margin-top: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .Card-Name {
     text-align: center;
     color: rgb(255, 220, 247);
+    font-size: 32px;
 }
 
 .Card-Description {
@@ -28,10 +38,18 @@ body {
     margin-right: 32px;
     text-align: center;
     color: rgb(255, 220, 247);
+    font-size: 18px;
 }
 
 .Card-Link {
-    margin-top: 64px;
+    margin-top: 80px;
     text-align: center;
     color: rgb(255, 220, 247);
+    font-size: 26px;
+}
+
+.Card-Icon {
+    padding-top: 16px;
+    width: 48px;
+    height: 48px;
 }
