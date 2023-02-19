@@ -25,6 +25,11 @@ body {
     margin-top: 16px;
     margin-bottom: 16px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.Card:hover {
+    background-color: rgb(69, 76, 92);
 }
 
 .Card-Name {
@@ -45,8 +50,8 @@ body {
     text-align: center;
     color: rgb(255, 220, 247);
     font-size: 26px;
-    padding-top: 64px;
-    padding-bottom: 32px;
+    margin-top: 64px;
+    margin-bottom: 32px;
 }
 
 .Card-Icon {
