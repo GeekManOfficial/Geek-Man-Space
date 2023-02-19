@@ -16,8 +16,8 @@ body {
 }
 
 .Card {
-    width: 384px;
-    height: 640px;
+    width: auto;
+    height: auto;
     background-color: rgb(59, 66, 82);
     border-radius: 16px;
     margin-left: 16px;
@@ -42,10 +42,11 @@ body {
 }
 
 .Card-Link {
-    margin-top: 80px;
     text-align: center;
     color: rgb(255, 220, 247);
     font-size: 26px;
+    padding-top: 64px;
+    padding-bottom: 32px;
 }
 
 .Card-Icon {
