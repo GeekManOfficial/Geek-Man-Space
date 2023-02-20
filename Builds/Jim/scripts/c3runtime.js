@@ -4101,11 +4101,17 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.Wait,
 		C3.Plugins.System.Acts.GoToLayoutByName,
 		C3.Plugins.System.Cnds.CompareVar,
+		C3.Plugins.Browser.Acts.Close,
 		C3.Plugins.System.Exps.layeropacity,
 		C3.Plugins.System.Exps.dt,
 		C3.Plugins.System.Cnds.LayerCmpOpacity,
 		C3.Plugins.System.Cnds.TriggerOnce,
 		C3.Plugins.System.Acts.Signal,
+		C3.Plugins.Browser.Cnds.IsFullscreen,
+		C3.Plugins.Browser.Acts.CancelFullScreen,
+		C3.Plugins.System.Cnds.Else,
+		C3.Plugins.Browser.Acts.RequestFullScreen,
+		C3.Plugins.Keyboard.Cnds.IsKeyDown,
 		C3.Plugins.Touch.Cnds.OnTouchStart,
 		C3.Plugins.Touch.Exps.X,
 		C3.Plugins.Touch.Exps.Y,
@@ -4269,6 +4275,7 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			return () => v0.GetValue();
 		},
+		() => "Close",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const f1 = p._GetNode(1).GetBoundMethod();
