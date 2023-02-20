@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: rgb(46, 52, 64);
+    background-color: rgb(245, 245, 245);
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
@@ -18,7 +18,7 @@ body {
 .Card {
     width: auto;
     height: auto;
-    background-color: rgb(59, 66, 82);
+    background-color: rgb(242, 231, 237);
     border-radius: 16px;
     margin-left: 16px;
     margin-right: 16px;
@@ -29,12 +29,12 @@ body {
 }
 
 .Card:hover {
-    background-color: rgb(69, 76, 92);
+    background-color: rgb(242, 188, 214);
 }
 
 .Card-Name {
     text-align: center;
-    color: rgb(255, 220, 247);
+    color: rgb(115, 106, 109);
     font-size: 32px;
 }
 
@@ -42,13 +42,13 @@ body {
     margin-left: 32px;
     margin-right: 32px;
     text-align: center;
-    color: rgb(255, 220, 247);
+    color: rgb(115, 106, 109);
     font-size: 18px;
 }
 
 .Card-Link {
     text-align: center;
-    color: rgb(255, 220, 247);
+    color: rgb(115, 106, 109);
     font-size: 26px;
     margin-top: 64px;
     margin-bottom: 32px;
