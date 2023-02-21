@@ -1,62 +1,48 @@
-
-
-body {
-    background-color: rgb(46, 52, 64);
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    padding: 1em;
-}
-
-.Cards {
+.cards {
     display: flex;
     flex-direction: row;
     gap: 1em;
     width: 100%;
     flex-wrap: wrap;
+    padding-top: 4em;
 }
 
-.Card {
+.card {
     height: 30rem;
-    background-color: rgb(59, 66, 82);
+    background-color: var(--color-1);
     border-radius: 16px;
-    box-shadow: rgba(50, 50, 93, 0.4) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    transition: background-color 0.2s ease-in-out;
+    box-shadow: var(--shadow);
     text-decoration: none;
+    box-shadow: var(--shadow-1);
+    transition: box-shadow 0.2s, background-color 0.2s ease-in-out;
 }
 
-.Card:hover {
-    background-color: rgb(69, 76, 92);
+.card:hover {
+    background-color: var(--color-2);
+    box-shadow: var(--shadow-2);
 }
 
-.Card-Name {
+.card-name {
     text-align: center;
-    color: rgb(222, 181, 215);
+    color: var(--color-7);
     font-size: 32px;
-
 }
 
-.Card-Description {
+.card-description {
     text-align: center;
     border-radius: 12px;
-    color: rgb(222, 181, 215);
-    font-size: 18px;
+    color: var(--color-6);
+    font-size: 20px;
     height: 36%;
     overflow-y: auto;
     margin-left: 2em;
     margin-right: 2em;
 }
 
-.Card-Link {
-    text-align: center;
-    color: rgb(115, 106, 109);
-    font-size: 26px;
-    margin-top: 2em;
-    margin-bottom: 1em;
-}
-
-.Card-Icon {
+.card-icon {
     margin-top: 2em;
     width: 96px;
     height: 96px;
     border-radius: 12px;
-    box-shadow: rgba(50, 50, 93, 0.4) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: var(--shadow-1);
 }

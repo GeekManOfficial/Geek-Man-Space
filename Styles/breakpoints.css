@@ -2,12 +2,12 @@
 @media (min-width: 1399.99px) {
 
     /* Cards */
-    .Cards {
+    .cards {
         flex-direction: row;
         justify-content: center;
     }
 
-    .Card {
+    .card {
         width: 30%;
     }
 }
@@ -16,12 +16,12 @@
 @media (max-width: 1399.98px) {
 
     /* Cards */
-    .Cards {
+    .cards {
         flex-direction: row;
         justify-content: center;
     }
 
-    .Card {
+    .card {
         width: 45%;
     }
 }
@@ -36,11 +36,11 @@
 @media (max-width: 767.98px) {
 
     /* Cards */
-    .Cards {
+    .cards {
         flex-direction: column;
     }
 
-    .Card {
+    .card {
         width: 100%;
     }
 }
