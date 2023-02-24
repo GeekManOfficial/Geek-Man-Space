@@ -1,6 +1,6 @@
 .navbar {
     width: 100%;
-    height: 3em;
+    height: 5em;
     position: fixed;
     top: 0;
     left: 0;
@@ -8,14 +8,15 @@
     display: flex;
     gap: 1em;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 
 .navbar-text {
     color: var(--color-7);
-    font-size: 24px;
+    font-size: 36px;
 }
 
 .navbar-logo {
-    height: 1.8em;
+    padding-left: 1em;
+    height: 3em;
 }
