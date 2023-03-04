@@ -4361,6 +4361,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SetAnimFrame,
 		C3.Plugins.Dictionary.Exps.Get,
 		C3.Plugins.Text.Acts.SetText,
+		C3.Plugins.System.Acts.SetLayoutScale,
 		C3.Plugins.Browser.Cnds.OnResize,
 		C3.Plugins.Sprite.Acts.SetPos,
 		C3.Plugins.System.Exps.originalviewportwidth,
@@ -4412,35 +4413,35 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Browser.Acts.RequestFullScreen,
 		C3.Plugins.Sprite.Cnds.OnAnyAnimFinished,
 		C3.Plugins.System.Acts.SetLayerInteractive,
-		C3.Plugins.System.Acts.SetLayoutScale,
 		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Plugins.System.Cnds.PickLastCreated,
 		C3.Plugins.Sprite.Exps.BBoxRight,
 		C3.Plugins.Sprite.Exps.BBoxTop,
 		C3.Plugins.System.Cnds.Repeat,
 		C3.Plugins.Sprite.Exps.Y,
+		C3.Plugins.System.Cnds.PickByComparison,
+		C3.Plugins.Text.Exps.Y,
+		C3.Plugins.Text.Acts.SetY,
 		C3.Plugins.System.Cnds.PickNth,
 		C3.Plugins.Sprite.Exps.X,
 		C3.Plugins.System.Acts.ScrollX,
 		C3.Plugins.Sprite.Exps.AnimationFrameCount,
 		C3.Plugins.Sprite.Cnds.CompareX,
 		C3.Plugins.System.Exps.viewportbottom,
-		C3.ScriptsInEvents["E-Game_Event10"],
+		C3.ScriptsInEvents["E-Game_Event11"],
 		C3.Plugins.Sprite.Acts.SetScale,
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.Sprite.Exps.AnimationName,
 		C3.Plugins.Text.Acts.SetFontColor,
 		C3.Plugins.System.Exps.rgbex255,
-		C3.Plugins.Text.Exps.Y,
 		C3.Plugins.System.Acts.Scroll,
 		C3.Plugins.System.Exps.scrollx,
 		C3.Plugins.Sprite.Cnds.IsOverlappingOffset,
 		C3.Behaviors.Timer.Cnds.OnTimer,
-		C3.ScriptsInEvents["E-Game_Event26"],
+		C3.ScriptsInEvents["E-Game_Event27"],
 		C3.Behaviors.Timer.Acts.StartTimer,
 		C3.Plugins.Sprite.Cnds.IsBoolInstanceVarSet,
 		C3.Plugins.Sprite.Acts.SetBoolInstanceVar,
-		C3.Plugins.System.Cnds.PickByComparison,
 		C3.Plugins.Touch.Cnds.IsInTouch,
 		C3.Plugins.Keyboard.Cnds.IsKeyDown,
 		C3.Plugins.gamepad.Cnds.IsButtonDown,
@@ -4455,7 +4456,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.gamepad.Cnds.OnButtonUp,
 		C3.Behaviors.Platform.Acts.SimulateControl,
 		C3.Plugins.Sprite.Acts.Spawn,
-		C3.ScriptsInEvents["E-Game_Event35"],
+		C3.ScriptsInEvents["E-Game_Event36"],
 		C3.Behaviors.Platform.Cnds.OnLand,
 		C3.Plugins.System.Cnds.CompareBetween,
 		C3.Behaviors.Platform.Exps.VectorY,
@@ -4465,7 +4466,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Browser.Acts.ConsoleLog,
 		C3.Behaviors.Platform.Acts.SetEnabled,
 		C3.Plugins.Sprite.Exps.BBoxBottom,
-		C3.Plugins.Text.Acts.SetY,
 		C3.Plugins.System.Cnds.OnSuspend
 	];
 };
@@ -4670,6 +4670,10 @@ self.C3_ExpressionFuncs = [
 			return () => and("High Score: ", n0.ExpObject("Highscore"));
 		},
 		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => ((((v0.GetValue()) === (0) ? 1 : 0)) ? (1) : (1.2));
+		},
+		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => (f0() / 2);
 		},
@@ -4758,10 +4762,6 @@ self.C3_ExpressionFuncs = [
 		() => "UI_Death",
 		() => "UI_Pause",
 		p => {
-			const v0 = p._GetNode(0).GetVar();
-			return () => ((((v0.GetValue()) === (0) ? 1 : 0)) ? (1) : (1.2));
-		},
-		p => {
 			const n0 = p._GetNode(0);
 			return () => n0.ExpObject("Current_Skin");
 		},
@@ -4778,6 +4778,7 @@ self.C3_ExpressionFuncs = [
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => (f0("UI") + 80);
 		},
+		() => 96,
 		() => 2,
 		p => {
 			const n0 = p._GetNode(0);
@@ -4924,7 +4925,6 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => add(n0.ExpObject("Score"), 1);
 		},
-		() => 96,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const n1 = p._GetNode(1);

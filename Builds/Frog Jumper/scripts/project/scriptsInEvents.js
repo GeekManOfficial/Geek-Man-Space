@@ -4,7 +4,7 @@ import BoxWithTick from "./box_with_tick.js";
 
 const scriptsInEvents = {
 
-	async ["E-Game_Event10"](runtime, localVars)
+	async ["E-Game_Event11"](runtime, localVars)
 	{
 		const platform = runtime.objects.Lily.getFirstPickedInstance();
 		const boxWithTick = new BoxWithTick();
@@ -16,13 +16,13 @@ const scriptsInEvents = {
 		});
 	},
 
-	async ["E-Game_Event26"](runtime, localVars)
+	async ["E-Game_Event27"](runtime, localVars)
 	{
 		const platform = runtime.objects.Lily.getFirstPickedInstance();
 		platform.springs.set_velocity(runtime.objects.Player.getFirstInstance().behaviors.Platform.jumpStrength / 45);
 	},
 
-	async ["E-Game_Event35"](runtime, localVars)
+	async ["E-Game_Event36"](runtime, localVars)
 	{
 		const platform = runtime.objects.Lily.getFirstPickedInstance();
 		platform.springs.set_velocity(runtime.objects.Player.getFirstInstance().behaviors.Platform.jumpStrength / 45);
