@@ -1,12 +1,9 @@
 body {
-    --color-0: rgb(255, 255, 255);
-    --color-1: rgb(255, 224, 255);
-    --color-2: rgb(255, 204, 235);
-    --color-3: rgb(78, 73, 95);
-    --color-4: rgb(129, 98, 113);
-    --color-5: rgb(153, 117, 119);
-    --color-6: rgb(92, 92, 92);
-    --color-7: rgb(72, 72, 72);
+    --color-0: rgb(13, 17, 23);
+    --color-1: rgb(22, 27, 34);
+    --color-2: rgb(33, 38, 44);
+    --color-3: rgb(222, 222, 222);
+    --color-4: rgb(255, 255, 255);
     --shadow-1: 0px 16px 24px -16px rgba(0, 0, 0, 0.3);
     --shadow-2: 0px 16px 24px 0px rgba(0, 0, 0, 0.4);
 

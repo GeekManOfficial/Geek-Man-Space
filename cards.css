@@ -24,14 +24,14 @@
 
 .card-name {
     text-align: center;
-    color: var(--color-7);
+    color: var(--color-4);
     font-size: 32px;
 }
 
 .card-description {
     text-align: center;
     border-radius: 12px;
-    color: var(--color-6);
+    color: var(--color-3);
     font-size: 20px;
     height: 36%;
     overflow-y: auto;
